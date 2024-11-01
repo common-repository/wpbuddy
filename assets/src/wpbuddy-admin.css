@@ -1,0 +1,577 @@
+#adminmenu #toplevel_page_wpbuddy.current a.menu-top {
+  background: #1d53dd;
+}
+
+.wpbuddy-navigation-wrapper {
+  background: rgb(30, 63, 171);
+  background: -moz-linear-gradient(
+    53deg,
+    rgba(30, 63, 171, 1) 0%,
+    rgba(2, 21, 75, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    53deg,
+    rgba(30, 63, 171, 1) 0%,
+    rgba(2, 21, 75, 1) 100%
+  );
+  background: linear-gradient(
+    53deg,
+    rgba(30, 63, 171, 1) 0%,
+    rgba(2, 21, 75, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e3fab",endColorstr="#02154b",GradientType=1);
+  margin-left: -20px;
+}
+
+.wpbuddy-tab-header {
+  padding: 1rem 2rem;
+  background: #fff;
+  border-bottom: 1px solid #e1e4e8;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: -10px;
+  margin-bottom: 48px;
+}
+
+.wpbuddy-tab-header h1 {
+  margin: 0;
+  color: #1d2a3b;
+}
+
+.wpbuddy-navigation-wrapper .wpbuddy-navigation {
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.wpbuddy-navigation-wrapper .wpbuddy-logo a {
+  color: #fff;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.wpbuddy-nav-items .wpbuddy-nav-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: #c8d0e7;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.wpbuddy-nav-items .wpbuddy-nav-item:hover,
+.wpbuddy-nav-items .wpbuddy-nav-item.active {
+  color: #fff;
+  background: #4f60b2;
+}
+
+.wpbuddy-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+}
+
+.wpbuddy-admin-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.wpbuddy-admin-panel {
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.1);
+  margin-bottom: 1rem;
+}
+
+.wpbuddy-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  min-height: 64px;
+  margin-top: -24px;
+  margin-right: -24px;
+  margin-bottom: 0;
+  margin-left: -24px;
+  padding-top: 0;
+  padding-right: 24px;
+  padding-bottom: 0;
+  padding-left: 24px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #eaecf0;
+}
+
+.wpbuddy-panel-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #1d2a3b;
+}
+
+.wpbuddy-panel-body {
+  padding-top: 1rem;
+}
+
+.wpbuddy-news-item__header img {
+  width: 100%;
+  height: auto;
+}
+
+.wpbuddy-news-item__title {
+  color: #0d45a5;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0;
+}
+
+.wpbuddy-news-item__date {
+  color: #0d45a5;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+  padding: 0;
+}
+
+.wpbuddy-news-item__body p {
+  font-size: 1rem;
+}
+
+.wpbuddy-accordion__header {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9f9f9;
+  cursor: pointer;
+}
+
+.wpbuddy-accordion__header:hover {
+  background: #f1f1f1;
+}
+
+.wpbuddy-accordion__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+.wpbuddy-accordion__header.active h3 {
+  color: #1d53dd;
+}
+.wpbuddy-accordion__header.active .wpbuddy-accordion__icon {
+  color: #1d53dd;
+  transform: rotate(90deg);
+}
+
+.wpbuddy-accordion__header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgba(6, 43, 136, 1);
+}
+
+.wpbuddy-accordion__body {
+  display: none;
+  padding: 1rem;
+  background: #fff;
+}
+
+.wpbuddy-accordion__body p {
+  font-size: 16px;
+}
+
+.wpbuddy-panel-footer p {
+  margin: 0;
+  padding: 0;
+}
+
+.wpbuddy-tooltip {
+  position: relative;
+  display: inline-block;
+  color: #64748b;
+  cursor: pointer;
+}
+
+.wpbuddy-tooltip:hover .wpbuddy-tooltip-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+.wpbuddy-tooltip-content {
+  visibility: hidden;
+  width: 220px;
+  background-color: #1e293b;
+  color: #fff;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  padding: 12px;
+  position: absolute;
+  z-index: 1;
+  bottom: 50%;
+  transform: translateY(50%);
+  right: 150%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.wpbuddy-tooltip-content p {
+  margin: 0;
+  padding: 0;
+}
+
+.wpbuddy-tab-title {
+  color: #1d2327;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 1em 0;
+}
+
+.wpbuddy-license-status {
+  display: flex;
+  padding: 1rem 0;
+  align-items: center;
+  gap: 5px;
+}
+
+.wpbuddy-license-status .spinner {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+.wpbuddy-license-status .invalid {
+  color: #b91c1c;
+}
+
+.wpbuddy-license-status .valid {
+  color: #15803d;
+}
+
+.wpbuddy-footer {
+  position: fixed;
+  max-width: 375px;
+  bottom: 3rem;
+  right: 1rem;
+}
+
+.wpbuddy-footer * {
+  box-sizing: border-box;
+}
+
+.wpbuddy-footer .wpbuddy-footer__icon {
+  background-color: #1d53dd;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 0.5rem;
+  color: #fff;
+  margin-left: auto;
+}
+
+.wpbuddy-form__container {
+  display: none;
+  padding: 1rem;
+  height: 90%;
+  max-height: 515px;
+  min-height: 150px;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: rgb(0 0 0 / 12%) 0px 12px 48px 4px;
+  margin-bottom: 1rem;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wpbuddy-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 370px;
+}
+
+.wpbuddy-form__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.wpbuddy-form__container h2 {
+  margin: 0;
+}
+
+.wpbuddy-form__container .wpbuddy-form__close {
+  background: #fff;
+  cursor: pointer;
+  border: none;
+  margin-left: auto;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.wpbuddy-form__container .wpbuddy-form__close span {
+  display: flex;
+}
+
+.wpbuddy-form__container .wpbuddy-form__close:hover,
+.wpbuddy-form__button:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.wpbuddy-form__container .wpbuddy-form__close svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #68737e;
+}
+
+.wpbuddy-form__icon {
+  background-color: #1d53dd;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0.5rem;
+  color: #fff;
+}
+
+.wpbuddy-form__body {
+  flex: 1 1 0px;
+}
+
+.wpbuddy-form__field {
+  margin-bottom: 1rem;
+}
+
+.wpbuddy-form__label {
+  margin-bottom: 0.5rem;
+}
+
+.wpbuddy-form__field__error {
+  color: #ef4444;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.field-wrapper {
+  border: 1px solid #e1e4e8;
+  border-radius: 0.25rem;
+}
+
+input.wpbuddy-form__input:not([type="file"]),
+textarea.wpbuddy-form__input,
+select.wpbuddy-form__input {
+  display: block;
+  margin: 0;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #e1e4e8;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+input.wpbuddy-form__input:focus,
+textarea.wpbuddy-form__input:focus,
+select.wpbuddy-form__input:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0px #ffffff;
+}
+
+textarea.wpbuddy-form__input {
+  resize: none;
+  padding: 10px 48px 10px 13px;
+}
+
+.wpbuddy-form_footer {
+  margin-top: auto;
+}
+
+.textarea-wrapper {
+  position: relative;
+}
+
+.wpbuddy-form__button {
+  color: #37455b;
+  background: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  color: #68737e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wpbuddy-form__button svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.wpbuddy-form__container input[type="file"]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #e5e7eb;
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: #334155;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.wpbuddy-form__container input[type="file"]::file-selector-button:hover {
+  background: #0d45a5;
+  color: #fff;
+}
+
+.wpbuddy-form__container .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.wpbuddy-form-result,
+.wpbuddy-form-spinner {
+  position: absolute;
+  padding: 0 20px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  justify-content: center;
+  text-align: center;
+}
+
+.wpbuddy-form-result .result-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.wpbuddy-form-result .wpbuddy-form-result__success .result-icon {
+  background-color: #dcfce7;
+}
+
+.wpbuddy-form-result .wpbuddy-form-result__error .result-icon {
+  background-color: #f7d0d0;
+}
+
+.wpbuddy-form-result__success,
+.wpbuddy-form-result__error {
+  display: none;
+}
+
+.wpbuddy-form-result .wpbuddy-form-result__success .result-icon svg {
+  color: #4ade80;
+}
+
+.wpbuddy-form-result .wpbuddy-form-result__error .result-icon svg {
+  color: #f87171;
+}
+
+/* Animate form close position and opacity no loop*/
+.wpbuddy-form--close {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .wpbuddy-footer {
+    bottom: 0.5rem;
+    width: 90%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+@media (min-width: 960px) {
+  .wpbuddy-admin-grid {
+    grid-template-columns: 3fr 1fr;
+  }
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #3144d4;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
